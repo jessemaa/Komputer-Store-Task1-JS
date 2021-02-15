@@ -31,11 +31,19 @@
                                 <p class="card-text">Balance</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="card-text" style="float:right;">20 EUR</p>
+                                <p class="card-text" style="float:right;" id="bank-balance">20</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p class="card-text" id="outstanding-loan"></p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="card-text" style="float:right;" id="outstanding-loan-amount"></p>
                             </div>
                         </div>
                         &nbsp;
-                        <button type="button" class="btn btn-success" style="width:100%;margin-top:40px;">Get a
+                        <button type="button" class="btn btn-success" style="width:100%;margin-top:40px;" onclick="getLoan()">Get a
                             Loan</button>
                     </div>
                 </div>
@@ -50,7 +58,7 @@
                                 <p class="card-text">Pay</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="card-text" style="float:right;">0 EUR</p>
+                                <p class="card-text" id="salary" style="float:right;">0</p>
                             </div>
                         </div>
                         &nbsp;
@@ -60,7 +68,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <a href="#" class="btn btn-primary"
-                                    style="margin-top:40px;float:right;width:100%;">Work</a>
+                                    style="margin-top:40px;float:right;width:100%;" onclick="getPaid()">Work</a>
                             </div>
                         </div>
                     </div>
@@ -100,7 +108,7 @@
                                 computer around!</p>
                         </div>
                         <div class="col-sm-4 text-center">
-                            <h2>150 EUR</h2>
+                            <h2>$150</h2>
                             <a href="#" class="btn btn-info">BUY NOW</a>
                         </div>
                     </div>
@@ -108,6 +116,7 @@
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
