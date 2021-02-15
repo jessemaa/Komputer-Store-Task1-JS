@@ -31,7 +31,7 @@
                                 <p class="card-text">Balance</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="card-text" style="float:right;" id="bank-balance">20</p>
+                                <p class="card-text" style="float:right;" id="bank-balance"></p>
                             </div>
                         </div>
                         <div class="row">
@@ -45,6 +45,7 @@
                         &nbsp;
                         <button type="button" class="btn btn-success" style="width:100%;margin-top:40px;" onclick="getLoan()">Get a
                             Loan</button>
+                        <span id="pay-loan-button"></span>
                     </div>
                 </div>
             </div>
@@ -55,16 +56,16 @@
                         <hr>
                         <div class="row">
                             <div class="col-sm-6">
-                                <p class="card-text">Pay</p>
+                                <p class="card-text">Salary</p>
                             </div>
                             <div class="col-sm-6">
-                                <p class="card-text" id="salary" style="float:right;">0</p>
+                                <p class="card-text" id="salary" style="float:right;"></p>
                             </div>
                         </div>
                         &nbsp;
                         <div class="row">
                             <div class="col-sm-6">
-                                <a href="#" class="btn btn-warning" style="margin-top:40px;width:100%;">Bank</a>
+                                <a href="#" class="btn btn-warning" onclick="deposit()" style="margin-top:40px;width:100%;">Bank</a>
                             </div>
                             <div class="col-sm-6">
                                 <a href="#" class="btn btn-primary"
