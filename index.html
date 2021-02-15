@@ -14,7 +14,8 @@
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <span class="navbar-text">
-                The Latest Computers on Planet Earth
+                <img src="https://thumbs.dreamstime.com/b/trade-symbol-ways-arrow-laptop-logo-designs-vector-design-171844391.jpg" alt="Logo" width="45px">
+                   &nbsp;&nbsp;&nbsp;The Latest Computers on Planet Earth
             </span>
         </div>
     </nav>
@@ -80,15 +81,15 @@
                     <div class="card-body">
                         <h5 class="card-title">Laptops</h5>
                         <hr>
-                        <select name="Laptops" style="width:100%;">
-                            <option value="intolCeleroonE10">Intol Celeroon E10</option>
-                            <option value="asusSuper6000">Asus Super 6000</option>
-                            <option value="reallyBasicV.1">Really Basic V.1</option>
-                            <option value="workHorseWH100">Work Horse WH100</option>
+                        <select name="Laptops" style="width:100%;" id="pc-select" onchange="pcSelect()">
+                            <option id="intol" value="intol" selected="selected">Intol Celeroon E10</option>
+                            <option id="asus" value="asus">Asus Super 6000</option>
+                            <option id="basic" value="basic">Really Basic V.1</option>
+                            <option id="workhorse" value="workhorse">Work Horse WH100</option>
                         </select>
                         &nbsp;
                         <h5>Specs:</h5>
-                        <p style="font-size:12px;">Has a screen. Sometimes works. Usually good. Nothing fancy.</p>
+                        <p style="font-size:12px;" id="pc-specs"></p>
                     </div>
                 </div>
             </div>
@@ -98,19 +99,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="center">
-                                <img src="https://lh3.googleusercontent.com/proxy/nn4oo_7weIOVejdEs-AEUIcaR3OT8_va7NnBeYFEeCyMJqgKi8eozWC99K6HqPm5MRWHoJEIN5kGMvDJZN1IFe0yXqCRpRGrO9HMINECkHr9_i76_cPbjqYDcXwkp4c7ga4CYn8Z0hblU39gNetV2OxWe0AOvoxyfdLw6_CKwOMPXDSpSXv5ZUEW90RWaA"
-                                    alt="IntolCeleronE10" width="150px">
-                            </div>
+                                <img id="pc-img" src="https://thumbs.dreamstime.com/b/trade-symbol-ways-arrow-laptop-logo-designs-vector-design-171844391.jpg" alt="PC Image" width="150px">
                         </div>
                         <div class="col-sm-4">
-                            <h2>Intol Celeroon E10</h2>
-                            <p>This laptop will turn on! It is perfect for the first time user who likes to have a
-                                computer around!</p>
+                            <h2 id="pc-name"></h2>
+                            <p id="pc-desc">The worlds best and only laptop store you need! We've got you covered! Just select a laptop from the dropdown menu and BUY NOW!</p>
                         </div>
                         <div class="col-sm-4 text-center">
-                            <h2>$150</h2>
-                            <a href="#" class="btn btn-info">BUY NOW</a>
+                            <h2 id="pc-price"></h2>
+                            <a href="#" class="btn btn-info" onclick="buyPc()">BUY NOW</a>
                         </div>
                     </div>
                 </div>
